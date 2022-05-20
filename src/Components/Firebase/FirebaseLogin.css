@@ -1,0 +1,28 @@
+.firebase-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.login-switch {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.admin-login {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.toggle-password {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 3.5px;
+  cursor: pointer;
+}

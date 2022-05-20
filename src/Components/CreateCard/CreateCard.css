@@ -1,0 +1,75 @@
+.create-card-container {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+.create-card-logout-btn {
+  position: absolute;
+  margin-left: 90.25%;
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  text-shadow: 0 0 10px #03a9f4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.create-card-title {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.push {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.create-card-input {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.create-card-add-btn {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: #000;
+}
+
+.create-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-card-submit-btn {
+  width: 10%;
+  padding: 15px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.damy-card {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.damy-card-info {
+  color: #fff;
+  height: 200px;
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  align-items: center;
+  justify-content: center;
+}

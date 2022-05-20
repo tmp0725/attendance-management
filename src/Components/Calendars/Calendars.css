@@ -1,0 +1,25 @@
+.react-calendar {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  border: none;
+} 
+
+.react-calendar button {
+  padding: 20px 0;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.react-calendar button:hover {
+  color: #000;
+}
+
+.tileContent {
+  margin-top: 10px;
+}
+
+.react-calendar__navigation button {
+  height: 60px;
+}

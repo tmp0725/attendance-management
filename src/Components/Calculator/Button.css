@@ -1,0 +1,19 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Button.zero {
+  position: relative;
+  justify-content: flex-start;
+  padding-left: 25px;
+  width: 150px;
+  grid-column: 1 / span 2;
+  border-radius: 55px;
+}

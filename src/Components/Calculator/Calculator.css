@@ -1,0 +1,29 @@
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 87.5vh;
+  background: #000;
+}
+
+.calculator-display {
+  margin-bottom: 4.5rem;
+}
+
+.window {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  width: 300px;
+  font-size: 60px;
+  word-break: break-all;
+}
+
+.calculator-buttons {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(5, 0fr);
+  grid-template-columns: repeat(4, 0fr);
+}

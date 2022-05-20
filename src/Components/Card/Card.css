@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+section {
+  margin: 30px;
+} 
+
+.time-card {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.time-card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  transform-style: preserve-3d;
+  transition: 1s;
+  backdrop-filter: blur(10px);
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+} 
+
+.time-card .face.front::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.time-card .face.front::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.time-card .face.front .tag-name {
+  position: absolute;
+  font-size: 10px;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+} 
+
+.time-card .face.front .card-name {
+  text-shadow: 0 0 10px #03a9f4;
+  position: absolute;
+  font-size: 20px;
+  right: 40px;
+  top: 30px;
+  color: #fff;
+  font-style: italic;
+}
+
+.time-card .face.front .chip {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  max-width: 40px;
+}
+
+.time-card .face.front .card-number {
+  position: absolute;
+  font-size: 10px;
+  bottom: 90px;
+  left: 20px;
+  color: #fff;
+  letter-spacing: 6px;
+  text-shadow: 0 2px 1px #0005;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.time-card .face.front .tag-day {
+  position: absolute;
+  font-size: 10px;
+  bottom: 50px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1em;
+  text-align: right;
+}
+
+.time-card .face.front .tag-day span:last-child {
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+.time-card .face.front .tag-corporation {
+  position: absolute;
+  font-size: 10px;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.time-card .face.back .black-bar {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 60px;
+  background: #000;
+}
+
+.time-card .face.back .ccv-text {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.time-card .face.back .ccv-text h5 {
+  color: #fff;
+  top: 140px;
+  letter-spacing: 1px;
+}
+
+.time-card .face.back .ccv-text .white-bar {
+  position: absolute;
+  width: 220px;
+  height: 30px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.time-card .face.back .ccv-text .ccv {
+  font-size: 10px;
+  position: absolute;
+  background: #ccc;
+  color: #000;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 210px;
+  top: 65px;
+}
+
+.time-card:hover .face.front {
+  transform: rotateY(180deg);
+}
+
+.time-card .face.back {
+  transform: rotateY(180deg);
+}
+
+.time-card:hover .face.back {
+  transform: rotateY(360deg); 
+}
+
+.time-card .face.back .card-btns {
+  position: absolute;
+  display: flex;
+  bottom: 15px;
+  left: 100px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  color: #fff;
+  background: black;
+  cursor: pointer;
+}
+
+.card-btns span {
+  position: absolute;
+  background-color: #f907fc;
+  background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+}
+
+.card-btns span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s;
+}
+
+.card-btns:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.25s;
+}
+
+.card-btns span:nth-child(2) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s;
+}
+
+.card-btns:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+
+.card-btns span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.25s;
+}
+
+.card-btns:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.25s;
+}
+
+.card-btns span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+
+.card-btns:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.25s;
+}
